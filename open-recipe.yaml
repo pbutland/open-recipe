@@ -186,6 +186,14 @@ components:
         text:
           type: string
           description: 'free form text for any reviewer comments'
+    RecipeComplexity:
+      type: string
+      enum:
+        - beginner
+        - easy
+        - intermediate
+        - hard
+        - expert
     RecipeType:
       type: string
       enum:
@@ -282,10 +290,9 @@ components:
           type: integer
           format: int32
           description: 'total cooking time in minutes'
-        difficulty:
-          type: integer
-          format: int32
-          description: 'difficulty level from 1 to 5; Beginner, Easy, Intermediate, Hard, Expert'
+        complexity:
+          "$ref": '#/components/schemas/RecipeComplexity'
+          description: 'difficulty level of the recipe'
         type:
           "$ref": '#/components/schemas/RecipeType'
         cuisine:
