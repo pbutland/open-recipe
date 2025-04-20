@@ -281,7 +281,7 @@ components:
         cookingTime:
           type: integer
           format: int32
-         description: 'total cooking time in minutes'
+          description: 'total cooking time in minutes'
         difficulty:
           type: integer
           format: int32
