@@ -121,6 +121,18 @@ components:
         ratio:
           type: number
           format: double
+    IngredientGroup:
+      type: object
+      required:
+        - title
+        - ingredients
+      properties:
+        title:
+          type: string
+        ingredients:
+          type: array
+          items:
+            "$ref": '#/components/schemas/Ingredient'
     Ingredient:
       type: object
       required:
@@ -137,6 +149,18 @@ components:
           description: 'Indicates an optional ingredient'
         note:
           "$ref": '#/components/schemas/Note'
+    InstructionGroup:
+      type: object
+      required:
+        - title
+        - instructions
+      properties:
+        title:
+          type: string
+        instructions:
+          type: array
+          items:
+            "$ref": '#/components/schemas/Instruction'
     Instruction:
       type: object
       properties:
@@ -269,10 +293,17 @@ components:
         - name
       properties:
         id:
-          type: integer
-          format: int64
+          type: string
+          description: 'GUID for the recipe'
         name:
           type: string
+        description:
+          type: string
+        imageUrls:
+          type: array
+          items:
+            type: string
+            format: uri
         creator:
           type: string
           description: 'either the individual creator or a corporate entity'
@@ -304,13 +335,19 @@ components:
         ingredients:
           type: array
           items:
-            "$ref": '#/components/schemas/Ingredient'
+            "$ref": '#/components/schemas/IngredientGroup'
+        instructions:
+          type: array
+          items:
+            "$ref": '#/components/schemas/InstructionGroup'
         notes:
           type: array
           items:
             "$ref": '#/components/schemas/Note'
         nutrition:
-          "$ref": '#/components/schemas/NutritionInfo'
+          type: array
+          items:
+            "$ref": '#/components/schemas/NutritionInfo'
         reviews:
           type: array
           items:
