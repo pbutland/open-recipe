@@ -310,6 +310,21 @@ components:
         license:
           type: string
           description: 'license details explaining how the recipe may be used'
+        source:
+          type: string
+          description: 'name of the source of the recipe, e.g. a website or a book'
+        sourceUrl:
+          type: string
+          format: uri
+          description: 'URL of the source of the recipe'
+        datePublished:
+          type: string
+          format: date
+          description: 'date the recipe was published'
+        dateModified:
+          type: string
+          format: date
+          description: 'date the recipe was last modified'
         servings:
           type: integer
           format: int32
