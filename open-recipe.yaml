@@ -149,18 +149,6 @@ components:
           description: 'Indicates an optional ingredient'
         note:
           "$ref": '#/components/schemas/Note'
-    InstructionGroup:
-      type: object
-      required:
-        - title
-        - instructions
-      properties:
-        title:
-          type: string
-        instructions:
-          type: array
-          items:
-            "$ref": '#/components/schemas/Instruction'
     Instruction:
       type: object
       properties:
@@ -354,7 +342,7 @@ components:
         instructions:
           type: array
           items:
-            "$ref": '#/components/schemas/InstructionGroup'
+            "$ref": '#/components/schemas/Instruction'
         notes:
           type: array
           items:
