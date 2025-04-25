@@ -1,0 +1,171 @@
+{
+  "id": "123e4567-e89b-12d3-a456-426614174000",
+  "name": "Spaghetti puttanesca",
+  "description": "Cook up this classic sauce in one pan, then toss with spaghetti for a simple midweek meal. It's budget-friendly too, making it a great meal for the family",
+  "imageUrls": [
+    "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/puttanesca-cfb4e42.jpg"
+  ],
+  "creator": "Esther Clark",
+  "source": "BBC Good Food",
+  "sourceUrl": "https://www.bbcgoodfood.com/recipes/spaghetti-puttanesca",
+  "datePublished": "2019-10-22T10:44:47+01:00",
+  "dateModified": "2019-10-22T10:44:47+01:00",
+  "license": "Free",
+  "servings": 4,
+  "duration": [
+    {
+      "type": "cooking",
+      "duration": 20
+    }
+  ],
+  "complexity": "easy",
+  "type": "main",
+  "cuisine": "italian",
+  "tags": [
+    "dairyFree",
+    "eggFree",
+    "nutFree"
+  ],
+  "ingredients": [
+    {
+      "name": "",
+      "ingredients": [
+        {
+          "product": {
+            "name": "Olive oil"
+          },
+          "quantity": 3,
+          "unit": "tbsp"
+        },
+        {
+          "product": {
+            "name": "Onion"
+          },
+          "quantity": 1,
+          "note": "finely chopped"
+        },
+        {
+          "product": {
+            "name": "Large garlic cloves"
+          },
+          "quantity": 2,
+          "note": "crushed"
+        },
+        {
+          "product": {
+            "name": "Chilli flakes",
+            "cupWeightInGrams": 64
+          },
+          "quantity": 0.5,
+          "unit": "tsp",
+          "optional": true
+        },
+        {
+          "product": {
+            "name": "Can of chopped tomatoes",
+            "unitMeasurement": 400,
+            "measurementUnit": "g",
+            "cupWeightInGrams": 258
+          },
+          "quantity": 1
+        },
+        {
+          "product": {
+            "name": "Anchovies"
+          },
+          "quantity": 5,
+          "note": "fillets, finally chopped"
+        },
+        {
+          "product": {
+            "name": "Pitted black olives",
+            "cupWeightInGrams": 130
+          },
+          "quantity": 120,
+          "unit": "g"
+        },
+        {
+          "product": {
+            "name": "Capers",
+            "cupWeightInGrams": 145
+          },
+          "quantity": 2,
+          "unit": "tbsp",
+          "note": "drained"
+        },
+        {
+          "product": {
+            "name": "Dried spaghetti",
+            "cupWeightInGrams": 60
+          },
+          "quantity": 300,
+          "unit": "g"
+        },
+        {
+          "product": {
+            "name": "Parsley"
+          },
+          "quantity": 0.5,
+          "unit": "bunch",
+          "note": "finely chopped"
+        }
+      ]
+    }
+  ],
+  "instructions": [
+    {
+      "step": 1,
+      "description": "Heat the oil in a non-stick pan over a medium-low heat. Add the onion along with a generous pinch of salt and fry for 10 mins, or until soft. Add the garlic and chilli, if using, and cook for a further minute."
+    },
+    {
+      "step": 2,
+      "description": "Stir the tomatoes, anchovies, olives and capers into the onion, bring to a gentle simmer and cook, uncovered, for 15 mins. Season to taste."
+    },
+    {
+      "step": 3,
+      "description": "Meanwhile, bring a large pan of salted water to the boil. Cook the spaghetti following pack instructions, then drain and toss with the sauce and parsley."
+    }
+  ],
+  "nutritionInfoPerServe": [
+    {
+      "type": "energy",
+      "value": 495,
+      "unit": "kcal"
+    },
+    {
+      "type": "fat",
+      "value": 19,
+      "unit": "g"
+    },
+    {
+      "type": "saturates",
+      "value": 3,
+      "unit": "g"
+    },
+    {
+      "type": "carbohydrates",
+      "value": 66,
+      "unit": "g"
+    },
+    {
+      "type": "sugar",
+      "value": 8,
+      "unit": "g"
+    },
+    {
+      "type": "fibre",
+      "value": 6,
+      "unit": "g"
+    },
+    {
+      "type": "protein",
+      "value": 13,
+      "unit": "g"
+    },
+    {
+      "type": "salt",
+      "value": 1.8,
+      "unit": "g"
+    }
+  ]
+}
