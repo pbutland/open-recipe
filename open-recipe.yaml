@@ -121,6 +121,38 @@ components:
         ratio:
           type: number
           format: double
+    DurationType:
+      type: string
+      enum:
+        - preparation
+        - cooking
+        - resting
+        - cooling
+        - marinating
+        - freezing
+        - defrosting
+        - serving
+        - soaking
+        - baking
+        - drying
+        - fermenting
+        - pickling
+        - brining
+        - curing
+        - chilling
+        - steeping
+    Duration:
+      type: object
+      required:
+        - durationType
+        - time
+      properties:
+        durationType:
+          "$ref": '#/components/schemas/DurationType'
+        time:
+          type: integer
+          format: int32
+          description: 'time in minutes'
     IngredientGroup:
       type: object
       required:
@@ -316,14 +348,10 @@ components:
         servings:
           type: integer
           format: int32
-        prepTime:
-          type: integer
-          format: int32
-          description: 'total preparation time in minutes'
-        cookingTime:
-          type: integer
-          format: int32
-          description: 'total cooking time in minutes'
+        duration:
+          type: array
+          items:
+            "$ref": '#/components/schemas/Duration'
         complexity:
           "$ref": '#/components/schemas/RecipeComplexity'
           description: 'difficulty level of the recipe'
