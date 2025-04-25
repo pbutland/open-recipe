@@ -83,18 +83,37 @@ components:
     Unit:
       type: string
       enum:
+        - tsp
+        - tbsp
+        - dsp
+        - cup
         - mg
         - g
         - kg
         - ml
         - l
-        - lb
         - oz
+        - lb
         - floz
-        - tsp
-        - tbsp
-        - cup
         - pint
+        - qt
+        - gallon
+        - dash
+        - pinch
+        - stick
+        - slice
+        - piece
+        - clove
+        - head
+        - sprig
+        - bunch
+        - stalk
+        - ear
+        - pod
+        - wedge
+        - flake
+        - cube
+        - chunk
     NutritionUnit:
       type: string
       enum:
@@ -107,7 +126,10 @@ components:
         - carbohydrates
         - energy
         - protein
+        - fat
+        - fibre
         - saturatedFat
+        - saturates
         - sodium
         - sugar
         - transFat
@@ -263,6 +285,8 @@ components:
         - dairyFree
         - glutenFree
         - nutFree
+        - eggFree
+        - freezable
         - lowFodmap
         - keto
         - paleo
