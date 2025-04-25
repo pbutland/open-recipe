@@ -168,11 +168,11 @@ components:
     IngredientGroup:
       type: object
       required:
-        - title
         - ingredients
       properties:
         title:
           type: string
+          description: 'optional title for the ingredient group'
         ingredients:
           type: array
           items:
