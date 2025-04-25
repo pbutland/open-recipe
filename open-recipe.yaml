@@ -359,7 +359,7 @@ components:
           type: array
           items:
             "$ref": '#/components/schemas/Note'
-        nutrition:
+        nutritionInfoPerServe:
           type: array
           items:
             "$ref": '#/components/schemas/NutritionInfo'
