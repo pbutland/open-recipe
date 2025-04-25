@@ -185,9 +185,11 @@ components:
       properties:
         product:
           "$ref": '#/components/schemas/Product'
-        unitQuantity:
+        quantity:
           type: integer
           format: int32
+        unit:
+          "$ref": '#/components/schemas/Unit'
         optional:
           type: boolean
           description: 'Indicates an optional ingredient'
