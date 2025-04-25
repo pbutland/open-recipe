@@ -111,16 +111,6 @@ components:
         - sodium
         - sugar
         - transFat
-    Conversion:
-      type: object
-      properties:
-        fromUnit:
-          "$ref": '#/components/schemas/Unit'
-        toUnit:
-          "$ref": '#/components/schemas/Unit'
-        ratio:
-          type: number
-          format: double
     DurationType:
       type: string
       enum:
@@ -294,15 +284,21 @@ components:
           format: int64
         name:
           type: string
+        category:
+          type: string
+          description: 'category of the product, e.g. fruit, vegetable, meat, poultry, dairy, etc.'
         brand:
           type: string
         unitMeasurement:
           type: number
           format: double
+          description: 'unit measurement for the product, e.g. 400 (grams) for a can of tomatoes'
         measurementUnit:
           "$ref": '#/components/schemas/Unit'
-        conversions:
-          "$ref": '#/components/schemas/Conversion'
+        cupWeightInGrams:
+          type: number
+          format: double
+          description: 'conversion factor for the product to cups, i.e. how many grams in one cup'
         shelfLifeInDays:
           type: integer
           format: int64
