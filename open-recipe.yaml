@@ -157,14 +157,13 @@ components:
       type: object
       required:
         - durationType
-        - time
+        - timeInMinutes
       properties:
         durationType:
           "$ref": '#/components/schemas/DurationType'
-        time:
+        timeInMinutes:
           type: integer
           format: int32
-          description: 'time in minutes'
     IngredientGroup:
       type: object
       required:
@@ -198,6 +197,10 @@ components:
     Instruction:
       type: object
       properties:
+        step:
+          type: integer
+          format: int32
+          description: 'step number in the recipe'
         text:
           type: string
           description: 'free form text which can include text substitutions for notes and ingredients'
@@ -209,6 +212,10 @@ components:
         id:
           type: integer
           format: int64
+        index:
+          type: integer
+          format: int32
+          description: 'ordinal position relative to other notes'
         text:
           type: string
           description: 'free form text which can include text substitutions for notes and ingredients'
@@ -240,7 +247,8 @@ components:
         Rating:
           type: integer
           format: int32
-          description: 'from zero to ten'
+          minimum: 0
+          maximum: 10
         text:
           type: string
           description: 'free form text for any reviewer comments'
@@ -308,6 +316,9 @@ components:
         id:
           type: integer
           format: int64
+        sku:
+          type: string
+          description: 'stock keeping unit, e.g. barcode or other unique identifier'
         name:
           type: string
         category:
@@ -370,6 +381,7 @@ components:
         servings:
           type: integer
           format: int32
+          minimum: 1
         duration:
           type: array
           items:
