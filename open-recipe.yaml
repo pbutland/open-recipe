@@ -181,7 +181,7 @@ components:
       type: object
       required:
         - product
-        - unitQuantity
+        - quantity
       properties:
         product:
           "$ref": '#/components/schemas/Product'
@@ -321,8 +321,8 @@ components:
         - name
       properties:
         id:
-          type: integer
-          format: int64
+          type: string
+          description: 'GUID for the recipe'
         sku:
           type: string
           description: 'stock keeping unit, e.g. barcode or other unique identifier'
@@ -404,7 +404,7 @@ components:
           type: array
           items:
             "$ref": '#/components/schemas/RecipeTag'
-        ingredients:
+        ingredientsGroup:
           type: array
           items:
             "$ref": '#/components/schemas/IngredientGroup'
