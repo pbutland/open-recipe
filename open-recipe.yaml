@@ -194,7 +194,7 @@ components:
           type: boolean
           description: 'Indicates an optional ingredient'
         note:
-          "$ref": '#/components/schemas/Note'
+          type: string
     Instruction:
       type: object
       required:
