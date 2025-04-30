@@ -164,6 +164,7 @@ components:
         timeInMinutes:
           type: integer
           format: int32
+          minimum: 1
     IngredientGroup:
       type: object
       required:
@@ -196,10 +197,14 @@ components:
           "$ref": '#/components/schemas/Note'
     Instruction:
       type: object
+      required:
+        - step
+        - text
       properties:
         step:
           type: integer
           format: int32
+          minimum: 1
           description: 'step number in the recipe'
         text:
           type: string
@@ -207,14 +212,13 @@ components:
     Note:
       type: object
       required:
-        - id
+        - index
+        - text
       properties:
-        id:
-          type: integer
-          format: int64
         index:
           type: integer
           format: int32
+          minimum: 1
           description: 'ordinal position relative to other notes'
         text:
           type: string
@@ -231,9 +235,12 @@ components:
         value:
           type: number
           format: double
+          minimum: 0
         percent:
           type: number
           format: double
+          minimum: 0
+          maximum: 100
     Review:
       type: object
       required:
@@ -396,7 +403,7 @@ components:
         tags:
           type: array
           items:
-            "$ref": '#/components/schemas/RecipeTag'        
+            "$ref": '#/components/schemas/RecipeTag'
         ingredients:
           type: array
           items:
