@@ -404,7 +404,7 @@ components:
           type: array
           items:
             "$ref": '#/components/schemas/RecipeTag'
-        ingredientsGroup:
+        ingredientsGroups:
           type: array
           items:
             "$ref": '#/components/schemas/IngredientGroup'
