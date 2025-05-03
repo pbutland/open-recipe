@@ -341,10 +341,10 @@ components:
           description: 'unit measurement for the product, e.g. 400 (grams) for a can of tomatoes'
         measurementUnit:
           "$ref": '#/components/schemas/Unit'
-        cupWeightInGrams:
+        cupEquivalent:
           type: number
           format: double
-          description: 'conversion factor for the product to cups, i.e. how many grams in one cup'
+          description: 'how much `measurementUnit` for one cup'
         shelfLifeInDays:
           type: integer
           format: int64
