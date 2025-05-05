@@ -14,7 +14,7 @@ Full instructions on how to do this can be found in the projects [README.md](htt
 
 ### Create/Preview a Recipe
 
-![Create/Review a Recipe](https://raw.githubusercontent.com/pbutland/open-recipe/refs/heads/main/docs/images/create-preview-recipe.gif)
+![Create/Review a Recipe](https://raw.githubusercontent.com/pbutland/open-recipe/refs/heads/main/docs/images/create-recipe.gif)
 
 ### Measurement Conversion
 
