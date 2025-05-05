@@ -14,15 +14,15 @@ Full instructions on how to do this can be found in the projects [README.md](htt
 
 ### Create/Preview a Recipe
 
-[![Video Title](https://raw.githubusercontent.com/pbutland/open-recipe/refs/heads/main/docs/videos/thumbnails/create-recipe.png)](https://raw.githubusercontent.com/pbutland/open-recipe/refs/heads/main/docs/videos/create-recipe.mov)
+[![Video Title](https://img.youtube.com/vi/MdOb-hP4yJ8/maxresdefault.jpg)](https://youtu.be/MdOb-hP4yJ8)
 
 ### Measurement Conversion
 
-[![Video Title](https://raw.githubusercontent.com/pbutland/open-recipe/refs/heads/main/docs/videos/thumbnails/measurement-conversion.png)](https://raw.githubusercontent.com/pbutland/open-recipe/refs/heads/main/docs/videos/measurement-conversion.mov)
+[![Video Title](https://img.youtube.com/vi/Vi2dWtnwJZ4/maxresdefault.jpg)](https://youtu.be/Vi2dWtnwJZ4)
 
 ### File Format
 
-[![Video Title](https://raw.githubusercontent.com/pbutland/open-recipe/refs/heads/main/docs/videos/thumbnails/recipe-file.png)](https://raw.githubusercontent.com/pbutland/open-recipe/refs/heads/main/docs/videos/recipe-file.mov)
+[![Video Title](https://img.youtube.com/vi/Gz7_tvN99w8/maxresdefault.jpg)](https://youtu.be/Gz7_tvN99w8)
 
 ### REST API
 
