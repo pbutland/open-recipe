@@ -3,6 +3,7 @@
   "name": "Spaghetti puttanesca",
   "description": "Cook up this classic sauce in one pan, then toss with spaghetti for a simple midweek meal. It's budget-friendly too, making it a great meal for the family",
   "imageUrls": [
+    "https://www.recipetineats.com/tachyon/2021/08/Spaghetti-Puttanesca_64-SQ.jpg",
     "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/puttanesca-cfb4e42.jpg"
   ],
   "creator": "Esther Clark",
@@ -10,12 +11,12 @@
   "sourceUrl": "https://www.bbcgoodfood.com/recipes/spaghetti-puttanesca",
   "datePublished": "2019-10-22T10:44:47+01:00",
   "dateModified": "2019-10-22T10:44:47+01:00",
-  "license": "Free",
+  "license": "Public Domain",
   "servings": 4,
   "duration": [
     {
-      "type": "cooking",
-      "duration": 20
+      "durationType": "cooking",
+      "timeInMinutes": 20
     }
   ],
   "complexity": "easy",
@@ -24,11 +25,12 @@
   "tags": [
     "dairyFree",
     "eggFree",
-    "nutFree"
+    "nutFree",
+    "freezable"
   ],
-  "ingredients": [
+  "ingredientsGroups": [
     {
-      "name": "",
+      "title": "",
       "ingredients": [
         {
           "product": {
@@ -54,7 +56,7 @@
         {
           "product": {
             "name": "Chilli flakes",
-            "cupWeightInGrams": 64
+            "cupEquivalent": 64
           },
           "quantity": 0.5,
           "unit": "tsp",
@@ -65,7 +67,7 @@
             "name": "Can of chopped tomatoes",
             "unitMeasurement": 400,
             "measurementUnit": "g",
-            "cupWeightInGrams": 258
+            "cupEquivalent": 258
           },
           "quantity": 1
         },
@@ -79,7 +81,7 @@
         {
           "product": {
             "name": "Pitted black olives",
-            "cupWeightInGrams": 130
+            "cupEquivalent": 130
           },
           "quantity": 120,
           "unit": "g"
@@ -87,7 +89,7 @@
         {
           "product": {
             "name": "Capers",
-            "cupWeightInGrams": 145
+            "cupEquivalent": 145
           },
           "quantity": 2,
           "unit": "tbsp",
@@ -96,7 +98,7 @@
         {
           "product": {
             "name": "Dried spaghetti",
-            "cupWeightInGrams": 60
+            "cupEquivalent": 60
           },
           "quantity": 300,
           "unit": "g"
@@ -115,57 +117,63 @@
   "instructions": [
     {
       "step": 1,
-      "description": "Heat the oil in a non-stick pan over a medium-low heat. Add the onion along with a generous pinch of salt and fry for 10 mins, or until soft. Add the garlic and chilli, if using, and cook for a further minute."
+      "text": "Heat the oil in a non-stick pan over a medium-low heat. Add the onion along with a generous pinch of salt and fry for 10 mins, or until soft. Add the garlic and chilli, if using, and cook for a further minute."
     },
     {
       "step": 2,
-      "description": "Stir the tomatoes, anchovies, olives and capers into the onion, bring to a gentle simmer and cook, uncovered, for 15 mins. Season to taste."
+      "text": "Stir the tomatoes, anchovies, olives and capers into the onion, bring to a gentle simmer and cook, uncovered, for 15 mins. Season to taste."
     },
     {
       "step": 3,
-      "description": "Meanwhile, bring a large pan of salted water to the boil. Cook the spaghetti following pack instructions, then drain and toss with the sauce and parsley."
+      "text": "Meanwhile, bring a large pan of salted water to the boil. Cook the spaghetti following pack instructions, then drain and toss with the sauce and parsley."
+    }
+  ],
+  "notes": [
+    {
+      "index": "note1",
+      "text": "Make the sauce in big batches and freeze for future use."
     }
   ],
   "nutritionInfoPerServe": [
     {
-      "type": "energy",
-      "value": 495,
-      "unit": "kcal"
+      "valueType": "energy",
+      "valueUnit": "calories",
+      "value": 495
     },
     {
-      "type": "fat",
-      "value": 19,
-      "unit": "g"
+      "valueType": "fat",
+      "valueUnit": "grams",
+      "value": 19
     },
     {
-      "type": "saturates",
-      "value": 3,
-      "unit": "g"
+      "valueType": "saturates",
+      "valueUnit": "grams",
+      "value": 3
     },
     {
-      "type": "carbohydrates",
-      "value": 66,
-      "unit": "g"
+      "valueType": "carbohydrates",
+      "valueUnit": "grams",
+      "value": 66
     },
     {
-      "type": "sugar",
-      "value": 8,
-      "unit": "g"
+      "valueType": "sugar",
+      "valueUnit": "grams",
+      "value": 8
     },
     {
-      "type": "fibre",
-      "value": 6,
-      "unit": "g"
+      "valueType": "fibre",
+      "valueUnit": "grams",
+      "value": 6
     },
     {
-      "type": "protein",
-      "value": 13,
-      "unit": "g"
+      "valueType": "protein",
+      "valueUnit": "grams",
+      "value": 13
     },
     {
-      "type": "salt",
-      "value": 1.8,
-      "unit": "g"
+      "valueType": "sodium",
+      "valueUnit": "grams",
+      "value": 1.8
     }
   ]
 }

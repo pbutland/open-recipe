@@ -10,20 +10,20 @@
   "sourceUrl": "https://www.bbcgoodfood.com/recipes/lasagne",
   "datePublished": "2013-04-12T11:08:10+00:00",
   "dateModified": "2013-04-12T11:08:10+00:00",
-  "license": "Free",
+  "license": "Public Domain",
   "servings": 8,
   "duration": [
     {
-      "type": "preparation",
-      "duration": 60
+      "durationType": "preparation",
+      "timeInMinutes": 60
     },
     {
-      "type": "infusion",
-      "duration": 60
+      "durationType": "infusion",
+      "timeInMinutes": 60
     },
     {
-      "type": "cooking",
-      "duration": 190
+      "durationType": "cooking",
+      "timeInMinutes": 190
     }
   ],
   "complexity": "easy",
@@ -33,13 +33,14 @@
     "freezable",
     "nutFree"
   ],
-  "ingredients": [
+  "ingredientsGroups": [
     {
-      "name": "For the meat sauce",
+      "title": "For the meat sauce",
       "ingredients": [
         {
           "product": {
-            "name": "Olive oil"
+            "name": "Olive oil",
+            "cupEquivalent": 200
           },
           "quantity": 3,
           "unit": "tbsp"
@@ -74,7 +75,8 @@
         },
         {
           "product": {
-            "name": "Pancetta"
+            "name": "Pancetta",
+            "cupEquivalent": 258
           },
           "quantity": 140,
           "unit": "g",
@@ -96,14 +98,18 @@
         },
         {
           "product": {
-            "name": "Milk"
+            "name": "Milk",
+            "cupEquivalent": 255
           },
           "quantity": 200,
           "unit": "ml"
         },
         {
           "product": {
-            "name": "400g can of chopped tomatoes"
+            "name": "Can of chopped tomatoes",
+            "unitMeasurement": 400,
+            "measurementUnit": "g",
+            "cupEquivalent": 258
           },
           "quantity": 2
         },
@@ -142,7 +148,8 @@
         },
         {
           "product": {
-            "name": "Red wine"
+            "name": "Red wine",
+            "cupEquivalent": 250
           },
           "quantity": 500,
           "unit": "ml"
@@ -150,7 +157,7 @@
       ]
     },
     {
-      "name": "For the lasagne",
+      "title": "For the lasagne",
       "ingredients": [
         {
           "product": {
@@ -160,7 +167,8 @@
         },
         {
           "product": {
-            "name": "Parmesan cheese"
+            "name": "Parmesan cheese",
+            "cupEquivalent": 110
           },
           "quantity": 50,
           "unit": "g",
@@ -169,11 +177,12 @@
       ]
     },
     {
-      "name": "For the white sauce",
+      "title": "For the white sauce",
       "ingredients": [
         {
           "product": {
-            "name": "Milk"
+            "name": "Milk",
+            "cupEquivalent": 255
           },
           "quantity": 1.5,
           "unit": "l"
@@ -199,14 +208,16 @@
         },
         {
           "product": {
-            "name": "Butter"
+            "name": "Butter",
+            "cupEquivalent": 222
           },
           "quantity": 100,
           "unit": "g"
         },
         {
           "product": {
-            "name": "Plain flour"
+            "name": "Plain flour",
+            "cupEquivalent": 161
           },
           "quantity": 100,
           "unit": "g"
@@ -224,87 +235,87 @@
   "instructions": [
     {
       "step": 1,
-      "description": "First, make the béchamel sauce. Put the milk, onion, bay leaves and cloves into a large saucepan and bring very gently just up to the boil. Turn off the heat and set aside for 1 hr to infuse."
+      "text": "First, make the béchamel sauce. Put the milk, onion, bay leaves and cloves into a large saucepan and bring very gently just up to the boil. Turn off the heat and set aside for 1 hr to infuse."
     },
     {
       "step": 2,
-      "description": "For the meat sauce, put the oil, celery, onion, carrot, garlic and pancetta in another large saucepan. Gently cook together until the veg is soft but not coloured."
+      "text": "For the meat sauce, put the oil, celery, onion, carrot, garlic and pancetta in another large saucepan. Gently cook together until the veg is soft but not coloured."
     },
     {
       "step": 3,
-      "description": "Tip in the beef and pork mince, the milk and chopped tomatoes. Using a wooden spoon, stir together and break up and mash the lumps of mince against the sides of the pan. When the mince is mostly broken down, stir in all the herbs, the stock cubes and the red wine, and bring to a simmer. Cover and cook for 1 hr, stirring occasionally to stop the bottom catching."
+      "text": "Tip in the beef and pork mince, the milk and chopped tomatoes. Using a wooden spoon, stir together and break up and mash the lumps of mince against the sides of the pan. When the mince is mostly broken down, stir in all the herbs, the stock cubes and the red wine, and bring to a simmer. Cover and cook for 1 hr, stirring occasionally to stop the bottom catching."
     },
     {
       "step": 4,
-      "description": "Uncover and gently simmer for another 30 mins-1 hr until the meat is tender and saucy. Taste and season."
+      "text": "Uncover and gently simmer for another 30 mins-1 hr until the meat is tender and saucy. Taste and season."
     },
     {
       "step": 5,
-      "description": "To finish the béchamel sauce, strain the milk through a fine sieve into one or two jugs. Melt the butter in the same pan then, using a wooden spoon, mix in the flour and cook for 2 mins."
+      "text": "To finish the béchamel sauce, strain the milk through a fine sieve into one or two jugs. Melt the butter in the same pan then, using a wooden spoon, mix in the flour and cook for 2 mins."
     },
     {
       "step": 6,
-      "description": "Stir in the strained milk, a little at a time – the mix will thicken at first to a doughy paste, but keep going, adding milk gradually to avoid lumps. Bring to a gentle simmer, stirring constantly (if you have lumps, give it a quick whisk). Gently bubble for a few minutes until thickened. Season with salt, pepper and a good grating of nutmeg."
+      "text": "Stir in the strained milk, a little at a time – the mix will thicken at first to a doughy paste, but keep going, adding milk gradually to avoid lumps. Bring to a gentle simmer, stirring constantly (if you have lumps, give it a quick whisk). Gently bubble for a few minutes until thickened. Season with salt, pepper and a good grating of nutmeg."
     },
     {
       "step": 7,
-      "description": "Heat the oven to 180C/160C fan/gas 4. Spread a spoonful of the meat sauce over the base of a roughly 3.5-litre baking dish. Cover with a single layer of dried pasta sheets, snapping them to fit if needed, then top with a quarter of the béchamel. Spoon over a third of the meat sauce and scatter over a little of the parmesan."
+      "text": "Heat the oven to 180C/160C fan/gas 4. Spread a spoonful of the meat sauce over the base of a roughly 3.5-litre baking dish. Cover with a single layer of dried pasta sheets, snapping them to fit if needed, then top with a quarter of the béchamel. Spoon over a third of the meat sauce and scatter over a little of the parmesan."
     },
     {
       "step": 8,
-      "description": "Repeat the layers – pasta, béchamel, meat and parmesan – two more times to use all the meat sauce. Add a final layer of pasta, the last of the béchamel and remaining parmesan. Sit the dish on a baking tray to catch spills and bake for 1 hr until bubbling, browned and crisp on top."
+      "text": "Repeat the layers – pasta, béchamel, meat and parmesan – two more times to use all the meat sauce. Add a final layer of pasta, the last of the béchamel and remaining parmesan. Sit the dish on a baking tray to catch spills and bake for 1 hr until bubbling, browned and crisp on top."
     }
   ],
   "notes": [
     {
-      "id": "note1",
-      "note": "PREPARE AHEAD: Assemble the lasagne completely, then cool. Store in an airtight container and freeze for up to three months. Transfer to the fridge 48 hrs before you want to cook it to defrost, then bake as directed, checking after 1 hr in case it needs an extra 10-15 mins. (If you’ve frozen any leftovers, defrost in the fridge, then reheat in the microwave until piping hot)."
+      "index": "note1",
+      "text": "PREPARE AHEAD: Assemble the lasagne completely, then cool. Store in an airtight container and freeze for up to three months. Transfer to the fridge 48 hrs before you want to cook it to defrost, then bake as directed, checking after 1 hr in case it needs an extra 10-15 mins. (If you’ve frozen any leftovers, defrost in the fridge, then reheat in the microwave until piping hot)."
     },
     {
-      "id": "note2",
-      "note": "MAKE IT DIFFERENT: Add a thin layer of ham on top of each layer of béchamel sauce. Or swap the carrot for 2 finely chopped fennel bulbs to add an aniseed note to the meat sauce."
+      "index": "note2",
+      "text": "MAKE IT DIFFERENT: Add a thin layer of ham on top of each layer of béchamel sauce. Or swap the carrot for 2 finely chopped fennel bulbs to add an aniseed note to the meat sauce."
     }
   ],
   "nutritionInfoPerServe": [
     {
-      "type": "energy",
-      "value": 794,
-      "unit": "kcal"
+      "valueType": "energy",
+      "valueUnit": "calories",
+      "value": 794
     },
     {
-      "type": "fat",
-      "value": 38,
-      "unit": "g"
+      "valueType": "fat",
+      "valueUnit": "grams",
+      "value": 38
     },
     {
-      "type": "saturates",
-      "value": 17,
-      "unit": "g"
+      "valueType": "saturates",
+      "valueUnit": "grams",
+      "value": 17
     },
     {
-      "type": "carbohydrates",
-      "value": 63,
-      "unit": "g"
+      "valueType": "carbohydrates",
+      "valueUnit": "grams",
+      "value": 63
     },
     {
-      "type": "sugar",
-      "value": 16,
-      "unit": "g"
+      "valueType": "sugar",
+      "valueUnit": "grams",
+      "value": 16
     },
     {
-      "type": "fibre",
-      "value": 4,
-      "unit": "g"
+      "valueType": "fibre",
+      "valueUnit": "grams",
+      "value": 4
     },
     {
-      "type": "protein",
-      "value": 48,
-      "unit": "g"
+      "valueType": "protein",
+      "valueUnit": "grams",
+      "value": 48
     },
     {
-      "type": "salt",
-      "value": 2.7,
-      "unit": "g"
+      "valueType": "sodium",
+      "valueUnit": "grams",
+      "value": 2.7
     }
   ]
 }
