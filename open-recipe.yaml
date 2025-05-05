@@ -189,6 +189,7 @@ components:
         quantity:
           type: integer
           format: int32
+          minimum: 1
         unit:
           "$ref": '#/components/schemas/Unit'
         optional:
@@ -338,16 +339,19 @@ components:
         unitMeasurement:
           type: number
           format: double
+          minimum: 0
           description: 'unit measurement for the product, e.g. 400 (grams) for a can of tomatoes'
         measurementUnit:
           "$ref": '#/components/schemas/Unit'
         cupEquivalent:
           type: number
           format: double
+          minimum: 0
           description: 'how much `measurementUnit` for one cup'
         shelfLifeInDays:
           type: integer
           format: int64
+          minimum: 1
     Recipe:
       type: object
       required:
