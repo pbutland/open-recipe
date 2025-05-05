@@ -1,0 +1,31 @@
+body {
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.app-container {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100vh;
+}
+
+.child-item {
+  flex: 1 1 calc(33.33% - 20px); /* 3 items per row with space for margin */
+  margin: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: lightsteelblue;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 20px;
+}
+
+pre {
+  text-align: left;
+  padding: 10px;
+  white-space: pre-wrap; /* Keeps whitespace */
+  overflow-x: auto; /* Allows horizontal scrolling if necessary */
+}

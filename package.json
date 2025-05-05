@@ -1,0 +1,70 @@
+{
+  "name": "open-recipe",
+  "packageManager": "yarn@4.6.0",
+  "description": "An open source project for a food recipe file format and API.  Along with a reference implementation for creating and viewing recipes in a web browser and fetching recipes via a REST API.",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "jest test",
+    "test:unit": "jest --testMatch='**/__tests__/**/*.test.ts'",
+    "test:functional": "jest --testMatch='**/__tests__/**/*.functional.ts'",
+    "eject": "react-scripts eject",
+    "bundle": "node build.js",
+    "generate:types": "openapi-typescript open-recipe.yaml -o ./src/types/api.ts --enum",
+    "wdio": "wdio run ./wdio.conf.ts"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@mui/icons-material": "^7.0.2",
+    "@mui/lab": "^7.0.0-beta.11",
+    "@mui/material": "^7.0.2",
+    "@mui/system": "^7.0.2",
+    "@mui/x-date-pickers": "^8.2.0",
+    "date-fns": "^4.1.0",
+    "js-yaml": "^4.1.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-swipeable-views": "^0.14.0",
+    "styled-components": "^6.1.17",
+    "uuid": "^11.1.0"
+  },
+  "devDependencies": {
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.3.0",
+    "@types/identity-obj-proxy": "^3",
+    "@types/jest": "^29.5.14",
+    "@types/js-yaml": "^4",
+    "@types/react": "^19.1.2",
+    "@types/react-dom": "^19.1.2",
+    "@types/react-swipeable-views": "^0",
+    "@types/selenium-webdriver": "^4.1.28",
+    "chromedriver": "^136.0.0",
+    "esbuild": "^0.25.3",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "openapi-typescript": "^7.6.1",
+    "react-scripts": "^5.0.1",
+    "selenium-webdriver": "^4.31.0",
+    "ts-jest": "^29.3.2",
+    "typescript": "^5.8.3"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "peerDependencies": {
+    "react": "^17.0.0 || ^18.0.0 || ^19.0.0",
+    "react-dom": "^17.0.0 || ^18.0.0 || ^19.0.0"
+  }
+}
