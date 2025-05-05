@@ -9,7 +9,7 @@ import ExpandableCard from '../../common/ExpandableCard';
 
 const StyledStack = styled(Stack)`
   && {
-    margin: 10px; // Add padding here
+    margin: 10px;
   }
 `;
 

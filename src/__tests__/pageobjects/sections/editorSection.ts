@@ -96,7 +96,7 @@ export class EditorSection extends BaseSection {
   public async loadNotes(recipe: Recipe) {
     const notes = recipe['notes'] ?? [];
     for (let i = 0; i < notes.length; i++) {
-      await this.addNote(i+1, notes[i].text);
+      await this.addNote(i, notes[i].text);
 
       let element = await this.findElement(By.id('preview-recipe-shopping-list-title'));
       await this.driver.executeScript("arguments[0].scrollIntoViewIfNeeded(true);", element);
@@ -106,7 +106,7 @@ export class EditorSection extends BaseSection {
   public async loadInstructions(recipe: Recipe) {
     const instructions = recipe['instructions'] ?? [];
     for (let i = 0; i < instructions.length; i++) {
-      await this.addInstruction(instructions[i].step, instructions[i].text);
+      await this.addInstruction(i, instructions[i].text);
 
       let element = await this.findElement(By.id('preview-recipe-shopping-list-title'));
       await this.driver.executeScript("arguments[0].scrollIntoViewIfNeeded(true);", element);
@@ -179,18 +179,14 @@ export class EditorSection extends BaseSection {
     }
   }
 
-  public async addInstruction(step: number, text: string): Promise<void> {
+  public async addInstruction(index: number, text: string): Promise<void> {
     await this.clickButton('recipe-add-instruction'); 
-
-    await this.setFieldValue(`recipe-instruction-step-${step-1}`, step.toString());
-    await this.setFieldValue(`recipe-instruction-text-${step-1}`, text);
+    await this.setFieldValue(`recipe-instruction-text-${index}`, text);
   }
 
   public async addNote(index: number, text: string): Promise<void> {
     await this.clickButton('recipe-add-note'); 
-
-    await this.setFieldValue(`recipe-note-index-${index-1}`, index.toString());
-    await this.setFieldValue(`recipe-note-text-${index-1}`, text);
+    await this.setFieldValue(`recipe-note-text-${index}`, text);
   }
 
   public async addNutrionalInfo(index: number, valueType: string, valueUnit?: string, value?: number, percent?: number): Promise<void> {

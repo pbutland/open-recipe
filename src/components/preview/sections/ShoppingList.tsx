@@ -55,8 +55,8 @@ const ShoppingList: React.FC<{ ingredients: Ingredient[] | undefined }> = ({ ing
         </Typography>
       )}
       {items?.map((item, i) => (
-        <Typography variant="body1" color="primary">
-          <li key={i}>
+        <Typography variant="body1" color="primary" key={i}>
+          <li>
             {item}
           </li>
         </Typography>

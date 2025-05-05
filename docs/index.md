@@ -14,15 +14,15 @@ Full instructions on how to do this can be found in the projects [README.md](htt
 
 ### Create/Preview a Recipe
 
-[![Video Title](https://img.youtube.com/vi/MdOb-hP4yJ8/maxresdefault.jpg)](https://youtu.be/MdOb-hP4yJ8)
+[![Video Title](https://img.youtube.com/vi/MdOb-hP4yJ8/maxresdefault.jpg)](https://www.youtube.com/watch?v=MdOb-hP4yJ8)
 
 ### Measurement Conversion
 
-[![Video Title](https://img.youtube.com/vi/Vi2dWtnwJZ4/maxresdefault.jpg)](https://youtu.be/Vi2dWtnwJZ4)
+[![Video Title](https://img.youtube.com/vi/Vi2dWtnwJZ4/maxresdefault.jpg)](https://www.youtube.com/watch?v=Vi2dWtnwJZ4)
 
 ### File Format
 
-[![Video Title](https://img.youtube.com/vi/Gz7_tvN99w8/maxresdefault.jpg)](https://youtu.be/Gz7_tvN99w8)
+[![Video Title](https://img.youtube.com/vi/Gz7_tvN99w8/maxresdefault.jpg)](https://www.youtube.com/watch?v=Gz7_tvN99w8)
 
 ### REST API
 

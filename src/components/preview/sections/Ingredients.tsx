@@ -20,8 +20,8 @@ const Ingredients: React.FC<{ ingredients: Ingredient[] | undefined }> = ({ ingr
   return (
     <div>
       {mappedIngredients?.map((item, i) => (
-        <Typography variant="body1" color="primary">
-          <li key={i}>
+        <Typography variant="body1" color="primary" key={i}>
+          <li>
             {item}
           </li>
         </Typography>

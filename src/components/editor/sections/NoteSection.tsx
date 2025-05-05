@@ -1,16 +1,16 @@
 import React, { useCallback, useContext, useState } from 'react';
-import { Button, FormControl, Stack } from '@mui/material';
+import { Box, Button, FormControl } from '@mui/material';
 import styled from 'styled-components';
 import Note from '../../../types/Note';
 import RecipeContext from '../../../context/RecipeContext';
-import FormComponentBuilder from '../form/FormComponentBuilder';
+import SimpleTextInput from '../form/SimpleTextInput';
 import { toSentenceCase } from '../../../utils/utils';
 import { propertyNameToEntityName } from '../../../utils/utils';
 import ExpandableCard from '../../common/ExpandableCard';
 
-const StyledStack = styled(Stack)`
+const StyledBox = styled(Box)`
   && {
-    margin: 10px; // Add padding here
+    margin: 10px;
   }
 `;
 
@@ -23,7 +23,8 @@ const NoteSection: React.FC<{ name: string, openApiComponents: any }> = ({ name,
     if (index !== undefined) {
       notes[index] = {
         ...notes[index],
-        [field]: value.length !== 0 ? value : undefined,
+        text: value,
+        index: index+1,
       }
       setNotes(notes);
     }
@@ -37,27 +38,20 @@ const NoteSection: React.FC<{ name: string, openApiComponents: any }> = ({ name,
   };
 
   const addComponent = () => {
-    const formComponents = openApiComponents ? Object.entries(openApiComponents.components.schemas[propertyNameToEntityName(name)].properties).map(([key, value]) => {
-      const index = components.length;
-      const id = `recipe-${name}-${key}-${index}`;
-
-      return (
-        <FormControl fullWidth>
-          <FormComponentBuilder id={id} key={key} name={key} value={value} openApiComponents={openApiComponents} changeHandler={handleChange} index={index} />
-        </FormControl>
-      );
-    }).filter(item => item !== undefined) : null;
-
+    const id = `recipe-note-text-${components.length}`;
+    const textComponent = <FormControl fullWidth><SimpleTextInput id={id} name='text' type='string' changeHandler={handleChange} index={components.length} /></FormControl>;
     const deleteButton = undefined;//<Button color="error" variant="contained" onClick={() => deleteComponent(components.length)}>Delete {components.length}</Button>;
-    const newComponent = <div><StyledStack direction="row" spacing={2}>{formComponents}{deleteButton}</StyledStack></div>;
+    const newComponent = <li><StyledBox>{textComponent}{deleteButton}</StyledBox></li>;
     setComponents([...components, newComponent]);
   };
 
   return (
     <ExpandableCard id='notes' title='Notes'>
+      <ol>
       {components.map((component, index) => (
         <React.Fragment key={index}>{component}</React.Fragment>
       ))}
+      </ol>
       <Button id="recipe-add-note" variant="contained" onClick={addComponent}>Add {toSentenceCase(name)}</Button>
     </ExpandableCard>
   );
