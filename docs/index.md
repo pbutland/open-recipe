@@ -9,24 +9,31 @@ The [Open-Recipe OpenAPI document](https://raw.githubusercontent.com/pbutland/op
 
 ## Reference Implementation
 
-The reference implementation can be run locally and accessed in a web browser at http://localhost:3000 once running.
+### Client
+
+The client reference implementation can be run locally and accessed in a web browser at http://localhost:3000 once running.
 Full instructions on how to do this can be found in the projects [README.md](https://github.com/pbutland/open-recipe/blob/main/README.md) file.
 
-### Create/Preview a Recipe
+#### Create/Preview a Recipe
 
-[![Video Title](https://img.youtube.com/vi/MdOb-hP4yJ8/maxresdefault.jpg)](https://www.youtube.com/watch?v=MdOb-hP4yJ8)
+[![Create/Preview Recipe](https://img.youtube.com/vi/MdOb-hP4yJ8/maxresdefault.jpg)](https://www.youtube.com/watch?v=MdOb-hP4yJ8)
 
-### Measurement Conversion
+#### Measurement Conversion
 
-[![Video Title](https://img.youtube.com/vi/Vi2dWtnwJZ4/maxresdefault.jpg)](https://www.youtube.com/watch?v=Vi2dWtnwJZ4)
+[![Measurement Conversion](https://img.youtube.com/vi/Vi2dWtnwJZ4/maxresdefault.jpg)](https://www.youtube.com/watch?v=Vi2dWtnwJZ4)
 
-### File Format
+#### File Format
 
-[![Video Title](https://img.youtube.com/vi/Gz7_tvN99w8/maxresdefault.jpg)](https://www.youtube.com/watch?v=Gz7_tvN99w8)
+[![File Format](https://img.youtube.com/vi/Gz7_tvN99w8/maxresdefault.jpg)](https://www.youtube.com/watch?v=Gz7_tvN99w8)
 
-### REST API
+### Server API
 
-Coming soon!
+The server API reference implementation can be run locally and accessed in a web browser at http://localhost:3001 once running.
+Full instructions on how to do this can be found in the projects [README.md](https://github.com/pbutland/open-recipe/blob/main/README.md) file.
+
+#### API Documentation
+
+![API Documentation](./images/api-docs.png)
 
 ## Project Details
 
