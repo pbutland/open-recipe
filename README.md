@@ -2,8 +2,8 @@
 
 Welcome to **Open-Recipe**, an open-source project for creating a standardized food recipe file format and associated APIs. 
 
-This project includes a reference implementation that allows users to create, view recipes in a web browser, and fetch 
-recipes via a REST API.
+This project includes a reference implementation that allows users to create, view recipes in a web browser, and fetch recipes via a REST API.
+The code in this repository is not intended to be a working app and is only intended for reference purposes.
 
 The [Open-Recipe OpenAPI document](open-recipe.yaml) can be viewed using the [online swagger editor](https://editor.swagger.io/?url=https://raw.githubusercontent.com/pbutland/open-recipe/refs/heads/main/open-recipe.yaml).
 
@@ -13,7 +13,8 @@ The [Open-Recipe OpenAPI document](open-recipe.yaml) can be viewed using the [on
 2. [Requirements](#requirements)
 3. [Installation](#installation)
 4. [Usage](#usage)
-5. [Testing](#testing)
+5. [API Server](#api-server)
+6. [Testing](#testing)
 
 ## Introduction
 **Open-Recipe** is designed to provide a unified way to manage and share recipes across different platforms and applications. 
@@ -94,6 +95,48 @@ yarn build
 
 This command will create an optimized build in the `build` directory, which can be deployed to a web server.
 
+## API Server
+Open-Recipe includes a RESTful API server that provides endpoints for retrieving and managing recipe data.
+
+### API Features
+- Query and filter recipes with support for pagination
+- Retrieve individual recipes by ID
+- Get lightweight recipe summaries for efficient list displays
+- Filter recipes by name, type, cuisine, complexity, and tags
+- HATEOAS-compliant links for easy navigation through paginated results
+
+### Starting the API Server
+To start the API server, run:
+
+```sh
+yarn start:server
+```
+
+This will launch the API server on `http://localhost:3001`.
+
+You can also start both the frontend application and API server concurrently with:
+
+```sh
+yarn start:all
+```
+
+### API Documentation
+The API is documented using OpenAPI specification. You can view the full API documentation in several ways:
+
+1. Using the [online swagger editor](https://editor.swagger.io/?url=https://raw.githubusercontent.com/pbutland/open-recipe/refs/heads/main/open-recipe.yaml)
+2. Starting the API server and accessing the built-in API documentation at `http://localhost:3001/api-docs`
+
+### Key API Endpoints
+
+| Endpoint | Description |
+|---------|-------------|
+| `GET /api/v1/recipes` | Get full recipe data with filtering and pagination |
+| `GET /api/v1/recipes/summaries` | Get lightweight recipe summaries (ideal for list views) |
+| `GET /api/v1/recipes/:recipeId` | Get detailed information for a specific recipe |
+| `POST /api/v1/recipes` | Create a new recipe |
+
+Each endpoint supports various query parameters for filtering. See the OpenAPI documentation for complete details.
+
 ## Testing
 **Open-Recipe** includes both unit tests and functional tests. You can run these tests using Yarn:
 
@@ -137,4 +180,4 @@ jq -n '[inputs | .ingredientsGroups[] | .ingredients[] | .product]' ./recipes/*.
 ```
 
 ## Contributing
-Contributions are welcome! If you find a bug or have an enhancement request, please open an issue on the GitHub repository. 
+Contributions are welcome! If you find a bug or have an enhancement request, please open an issue on the GitHub repository.

@@ -4,7 +4,7 @@ info:
   description: Shopping list and recipes API.
   version: 1.0.0
 servers:
-  - url: http://localhost/api/v1
+  - url: http://localhost:3001/api/v1
 tags:
   - name: recipe
     description: A recipe
@@ -68,6 +68,89 @@ paths:
                 type: array
                 items:
                   "$ref": '#/components/schemas/Ingredient'
+  /recipes/summaries:
+    get:
+      tags:
+        - recipe
+      summary: Gets recipe summaries
+      description: Returns a list of recipe summaries with essential information for list displays
+      operationId: getRecipeSummaries
+      parameters:
+        - name: name
+          in: query
+          description: Filter by recipe name
+          required: false
+          schema:
+            type: string
+        - name: type
+          in: query
+          description: Filter by recipe type
+          required: false
+          schema:
+            $ref: '#/components/schemas/RecipeType'
+        - name: cuisine
+          in: query
+          description: Filter by recipe cuisine
+          required: false
+          schema:
+            $ref: '#/components/schemas/Cuisine'
+        - name: complexity
+          in: query
+          description: Filter by recipe complexity
+          required: false
+          schema:
+            $ref: '#/components/schemas/RecipeComplexity'
+        - name: tags
+          in: query
+          description: Filter by recipe tags (comma-separated)
+          required: false
+          schema:
+            type: array
+            items:
+              $ref: '#/components/schemas/RecipeTag'
+        - name: limit
+          in: query
+          description: Maximum number of items to return
+          required: false
+          schema:
+            type: integer
+            minimum: 1
+            default: 10
+        - name: offset
+          in: query
+          description: Number of items to skip
+          required: false
+          schema:
+            type: integer
+            minimum: 0
+            default: 0
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/RecipeSummary'
+                  _meta:
+                    type: object
+                    properties:
+                      totalItems:
+                        type: integer
+                      limit:
+                        type: integer
+                      offset:
+                        type: integer
+                  _links:
+                    type: object
+                    additionalProperties:
+                      type: string
+        '400':
+          description: Invalid query parameters
 components:
   schemas:
     ApiResponse:
@@ -430,3 +513,32 @@ components:
           type: array
           items:
             "$ref": '#/components/schemas/Review'
+    RecipeSummary:
+      type: object
+      required:
+        - id
+        - name
+      properties:
+        id:
+          type: string
+          description: 'GUID for the recipe'
+        name:
+          type: string
+        complexity:
+          "$ref": '#/components/schemas/RecipeComplexity'
+          description: 'difficulty level of the recipe'
+        type:
+          "$ref": '#/components/schemas/RecipeType'
+        cuisine:
+          "$ref": '#/components/schemas/Cuisine'
+        tags:
+          type: array
+          items:
+            "$ref": '#/components/schemas/RecipeTag'
+        imageUrls:
+          type: array
+          items:
+            type: string
+            format: uri
+        description:
+          type: string

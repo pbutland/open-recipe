@@ -11,7 +11,8 @@
     "eject": "react-scripts eject",
     "bundle": "node build.js",
     "generate:types": "openapi-typescript open-recipe.yaml -o ./src/types/api.ts --enum",
-    "wdio": "wdio run ./wdio.conf.ts"
+    "start:api": "ts-node --project tsconfig.server.json src/server/server.ts",
+    "build:api": "tsc -p tsconfig.server.json"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
@@ -21,12 +22,19 @@
     "@mui/material": "^7.0.2",
     "@mui/system": "^7.0.2",
     "@mui/x-date-pickers": "^8.2.0",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.1",
+    "@types/swagger-ui-express": "^4.1.8",
+    "body-parser": "^2.2.0",
+    "cors": "^2.8.5",
     "date-fns": "^4.1.0",
+    "express": "^5.1.0",
     "js-yaml": "^4.1.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-swipeable-views": "^0.14.0",
     "styled-components": "^6.1.17",
+    "swagger-ui-express": "^5.0.1",
     "uuid": "^11.1.0"
   },
   "devDependencies": {
@@ -36,6 +44,7 @@
     "@types/identity-obj-proxy": "^3",
     "@types/jest": "^29.5.14",
     "@types/js-yaml": "^4",
+    "@types/node": "^22.15.11",
     "@types/react": "^19.1.2",
     "@types/react-dom": "^19.1.2",
     "@types/react-swipeable-views": "^0",
@@ -49,7 +58,10 @@
     "react-scripts": "^5.0.1",
     "selenium-webdriver": "^4.31.0",
     "ts-jest": "^29.3.2",
-    "typescript": "^5.8.3"
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.8.3",
+    "webdriverio": "^9.12.7"
   },
   "browserslist": {
     "production": [

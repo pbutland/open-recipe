@@ -1,0 +1,134 @@
+{
+  "id": "123e4567-e89b-12d3-a456-426614174001",
+  "name": "Scalloped potatoes",
+  "description": "Impress guests with these deliciously creamy scalloped potatoes flavoured with garlic and parmesan. They're a great side dish for many dinners.",
+  "imageUrls": [
+    "https://images.immediate.co.uk/production/volatile/sites/30/2021/10/Scalloped-Potatoes-1c123a9.jpg"
+  ],
+  "creator": "Adam Bush",
+  "source": "BBC Good Food",
+  "sourceUrl": "https://www.bbcgoodfood.com/recipes/scalloped-potatoes",
+  "datePublished": "2023-05-06",
+  "dateModified": "2025-05-06",
+  "license": "Public Domain",
+  "servings": 8,
+  "duration": [
+    {
+      "durationType": "preparation",
+      "timeInMinutes": 20
+    },
+    {
+      "durationType": "cooking",
+      "timeInMinutes": 110
+    }
+  ],
+  "complexity": "easy",
+  "type": "side",
+  "cuisine": "british",
+  "tags": [
+    "vegetarian"
+  ],
+  "ingredientsGroups": [
+    {
+      "title": "",
+      "ingredients": [
+        {
+          "product": {
+            "name": "Unsalted butter"
+          },
+          "quantity": 50,
+          "unit": "g",
+          "note": "plus extra for the dish"
+        },
+        {
+          "product": {
+            "name": "Onion"
+          },
+          "quantity": 1,
+          "note": "thinly sliced"
+        },
+        {
+          "product": {
+            "name": "Garlic cloves"
+          },
+          "quantity": 2,
+          "note": "chopped"
+        },
+        {
+          "product": {
+            "name": "Plain flour"
+          },
+          "quantity": 50,
+          "unit": "g"
+        },
+        {
+          "product": {
+            "name": "Whole milk"
+          },
+          "quantity": 500,
+          "unit": "ml"
+        },
+        {
+          "product": {
+            "name": "Vegetable stock"
+          },
+          "quantity": 250,
+          "unit": "ml"
+        },
+        {
+          "product": {
+            "name": "Maris Piper potatoes"
+          },
+          "quantity": 1,
+          "unit": "kg",
+          "note": "thinly sliced (use a mandoline for the best results)"
+        },
+        {
+          "product": {
+            "name": "Parmesan"
+          },
+          "quantity": 75,
+          "unit": "g",
+          "note": "finely grated"
+        }
+      ]
+    }
+  ],
+  "instructions": [
+    {
+      "step": 1,
+      "text": "Heat the oven to 180C/160C fan/gas 4 and butter a deep 20 x 30cm baking dish."
+    },
+    {
+      "step": 2,
+      "text": "Melt the butter in a pan over a medium heat and cook the onion and garlic with a pinch of salt for 8-10 mins until the onion has softened slightly."
+    },
+    {
+      "step": 3,
+      "text": "Tip in the flour, stir well, then cook for a few minutes more."
+    },
+    {
+      "step": 4,
+      "text": "Mix the milk and stock together, then gradually pour this in, whisking well between additions until everything is incorporated and you have a smooth sauce. Simmer for a few minutes, then season well."
+    },
+    {
+      "step": 5,
+      "text": "Lay half the sliced potatoes in a single layer in the buttered dish, slightly overlapping them if needed. Pour over half the sauce, then scatter over half the parmesan."
+    },
+    {
+      "step": 6,
+      "text": "Arrange the remaining potatoes on top, then pour over the remaining sauce and scatter with the remaining parmesan."
+    },
+    {
+      "step": 7,
+      "text": "Cover with foil and bake for 1 hr, then remove the foil and bake for another 30 mins until golden on top."
+    }
+  ],
+  "notes": [
+    {
+      "index": 1,
+      "text": "You can use a mandoline for the best results when slicing potatoes."
+    }
+  ],
+  "nutritionInfoPerServe": []
+}

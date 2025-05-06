@@ -1,0 +1,143 @@
+{
+  "id": "123e4567-e89b-12d3-a456-426614174002",
+  "name": "Vegan Baked Beans",
+  "description": "Tinned baked beans are a staple in most British kitchens, but they're very easy to make yourself. This homemade version is made with cannellini beans smothered in a thick, rich tomato sauce.",
+  "imageUrls": [
+    "https://media-cdn2.greatbritishchefs.com/media/cr4fqdm1/img38195.whqc_1800x1200q90.webp"
+  ],
+  "creator": "Becca Pusey",
+  "source": "Great British Chefs",
+  "sourceUrl": "https://www.greatbritishchefs.com/recipes/vegan-baked-beans-recipe",
+  "datePublished": "2023-05-06",
+  "dateModified": "2025-05-06",
+  "license": "Public Domain",
+  "servings": 2,
+  "duration": [
+    {
+      "durationType": "cooking",
+      "timeInMinutes": 30
+    }
+  ],
+  "complexity": "easy",
+  "type": "breakfast",
+  "cuisine": "british",
+  "tags": [
+    "vegan",
+    "vegetarian",
+    "dairyFree",
+    "eggFree"
+  ],
+  "ingredientsGroups": [
+    {
+      "title": "",
+      "ingredients": [
+        {
+          "product": {
+            "name": "Oil"
+          },
+          "quantity": 1,
+          "unit": "tbsp"
+        },
+        {
+          "product": {
+            "name": "Onion"
+          },
+          "quantity": 1,
+          "unit": "piece",
+          "note": "finely diced"
+        },
+        {
+          "product": {
+            "name": "Garlic cloves"
+          },
+          "quantity": 2,
+          "unit": "clove",
+          "note": "minced"
+        },
+        {
+          "product": {
+            "name": "Tomato purée"
+          },
+          "quantity": 1,
+          "unit": "tbsp"
+        },
+        {
+          "product": {
+            "name": "Smoked paprika"
+          },
+          "quantity": 1,
+          "unit": "tsp"
+        },
+        {
+          "product": {
+            "name": "Dried thyme"
+          },
+          "quantity": 1,
+          "unit": "tsp"
+        },
+        {
+          "product": {
+            "name": "Brown sugar"
+          },
+          "quantity": 1,
+          "unit": "tbsp"
+        },
+        {
+          "product": {
+            "name": "Soy sauce"
+          },
+          "quantity": 1,
+          "unit": "tbsp"
+        },
+        {
+          "product": {
+            "name": "Tinned cannellini beans"
+          },
+          "quantity": 400,
+          "unit": "g",
+          "note": "drained (240g when drained)"
+        },
+        {
+          "product": {
+            "name": "Passata"
+          },
+          "quantity": 100,
+          "unit": "g"
+        },
+        {
+          "product": {
+            "name": "Black pepper"
+          },
+          "quantity": 1,
+          "unit": "pinch",
+          "note": "to taste"
+        }
+      ]
+    }
+  ],
+  "instructions": [
+    {
+      "step": 1,
+      "text": "Heat the oil in a saucepan, and add the onion and garlic. Cook over a medium heat for 5 minutes until soft and translucent. Add the tomato purée, paprika, thyme, brown sugar and soy sauce, and cook for a couple more minutes."
+    },
+    {
+      "step": 2,
+      "text": "Add the beans and passata, and simmer for at least 5 minutes, until the mixture is piping hot and the sauce has thickened a little."
+    },
+    {
+      "step": 3,
+      "text": "Season generously with black pepper - you probably won't need salt because of the soy sauce, but add it if you think it needs it. Serve warm on toast."
+    }
+  ],
+  "notes": [
+    {
+      "index": 1,
+      "text": "If you prefer your baked beans to be more saucy, you could easily add a dash of water or stock to thin them out a bit."
+    },
+    {
+      "index": 2,
+      "text": "These were great on toast as a quick and easy breakfast, but you could also serve them alongside sausages and chips for a heartier meal."
+    }
+  ],
+  "nutritionInfoPerServe": []
+}
