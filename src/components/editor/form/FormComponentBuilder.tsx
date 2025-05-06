@@ -4,19 +4,26 @@ import SimpleBoolean from './SimpleBoolean';
 import SimpleDateInput from './SimpleDateInput';
 import SimpleTextInput from './SimpleTextInput';
 import SimpleSelect from './SimpleSelect';
+import TooltipWrapper from '../../common/TooltipWrapper';
 import { getEntityFromRef } from '../../../utils/utils';
 import { OpenApiEnum, OpenApiObject } from '../../../types/openapi';
 
 const FormComponentBuilder: React.FC<{ name: string, value: any, openApiComponents: any, changeHandler?: (field: string, value: string, index?: number) => void, index?: number, id?: string }> = ({ name, value, openApiComponents, changeHandler, index, id }) => {
   const typedValue = value as OpenApiObject;
   const type = typedValue.type;
+  const description = typedValue.description;
+
   if (typedValue.format === 'date') {
     return (
-      <SimpleDateInput name={name} />
+      <TooltipWrapper description={description}>
+        <SimpleDateInput name={name} />
+        </TooltipWrapper>
     );
   } else if (type === 'string' || type === 'integer' || type === 'number') {
     return (
-      <SimpleTextInput id={id} name={name} type={type} entity={value} changeHandler={changeHandler} index={index} />
+      <TooltipWrapper description={description}>
+        <SimpleTextInput id={id} name={name} type={type} entity={value} changeHandler={changeHandler} index={index} />
+      </TooltipWrapper>
     );
   } else if (type === 'boolean') {
     return (
@@ -30,7 +37,9 @@ const FormComponentBuilder: React.FC<{ name: string, value: any, openApiComponen
       if (typedEntity.enum) {
         // single value enum
         return (
-          <ChipSelect name={name} options={typedEntity.enum} />
+          <TooltipWrapper description={description}>
+            <ChipSelect name={name} options={typedEntity.enum} />
+          </TooltipWrapper>
         );
       }
     }
@@ -40,7 +49,9 @@ const FormComponentBuilder: React.FC<{ name: string, value: any, openApiComponen
     const typedObj = obj as OpenApiEnum;
     if (typedObj.enum && typedObj.enum.length > 0) {
       return (
-        <SimpleSelect id={id} name={name} values={typedObj.enum} changeHandler={changeHandler} index={index} />
+        <TooltipWrapper description={description}>
+          <SimpleSelect id={id} name={name} values={typedObj.enum} changeHandler={changeHandler} index={index} />
+        </TooltipWrapper>
       );
     }
   }

@@ -1,6 +1,7 @@
 export interface OpenApiObject {
   type: string,
   format?: string,
+  description?: string,
   '$ref'?: string,
   items?: OpenApiObject,
 }
