@@ -9,12 +9,13 @@ The [Open-Recipe OpenAPI document](open-recipe.yaml) can be viewed using the [on
 
 ## Table of Contents
 1. [Introduction](#introduction)
-2. [Goals of the Project](#goals-of-the-project)
-2. [Requirements](#requirements)
-3. [Installation](#installation)
-4. [Usage](#usage)
-5. [API Server](#api-server)
-6. [Testing](#testing)
+2. [Philosophy](#philosophy)
+3. [Goals of the Project](#goals-of-the-project)
+4. [Requirements](#requirements)
+5. [Installation](#installation)
+6. [Usage](#usage)
+7. [API Server](#api-server)
+8. [Testing](#testing)
 
 ## Introduction
 **Open-Recipe** is designed to provide a unified way to manage and share recipes across different platforms and applications. 
@@ -22,6 +23,9 @@ The project consists of:
 - A web-based interface for creating and viewing recipes.
 - A RESTful API for fetching recipe data.
 - A TypeScript-generated client library for interacting with the API.
+
+While there is this commonly used [recipe schema](https://schema.org/Recipe), this lacks the rigid structure required to meet the goals of this project.
+In a lot of important areas the data is too normalised so as to make it very difficult to calculate different servings sizes and do measurement conversions.
 
 ## Philosophy
 
@@ -47,7 +51,8 @@ Simple!  Convert the recipe into the Open Recipe format and you will always have
   * Allow for filtering/searching recipes based on certain classifications (e.g. difficulty, meal type, cooking time, cuisine, food types such as vegan, vegetarian, and/or allergies)
 * **Reference Implementation**: Provide a practical example of how to create, view, and interact with recipe data 
 using web technologies.
-* **Conversion tools**: Provide tools to convert recipes from common online websites into the Open Recipe format
+* **Conversion tools**: Provide tools to convert recipes from common online websites (most using this [recipe schema](https://schema.org/Recipe)) into the Open Recipe format.
+(More information on the comparisons of the different schemas can be found [here](schema-comparison.md))
 * **Shopping tool**: Provide a tool that generates a shopping list from a recipe, or list of recipes, in the Open Recipe format and adds those ingredients to a shopping cart of your chosen online store.
 
 ## Requirements
