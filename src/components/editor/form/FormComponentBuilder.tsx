@@ -17,7 +17,7 @@ const FormComponentBuilder: React.FC<{ name: string, value: any, openApiComponen
     return (
       <TooltipWrapper description={description}>
         <SimpleDateInput name={name} />
-        </TooltipWrapper>
+      </TooltipWrapper>
     );
   } else if (type === 'string' || type === 'integer' || type === 'number') {
     return (
