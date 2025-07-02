@@ -16,15 +16,15 @@ Full instructions on how to do this can be found in the projects [README.md](htt
 
 #### Create/Preview a Recipe
 
-[![Create/Preview Recipe](https://img.youtube.com/vi/MdOb-hP4yJ8/maxresdefault.jpg)](https://www.youtube.com/watch?v=MdOb-hP4yJ8)
+[![Create/Preview Recipe](videos/thumbnails/create-recipe.png)](https://www.youtube.com/watch?v=MdOb-hP4yJ8)
 
 #### Measurement Conversion
 
-[![Measurement Conversion](https://img.youtube.com/vi/Vi2dWtnwJZ4/maxresdefault.jpg)](https://www.youtube.com/watch?v=Vi2dWtnwJZ4)
+[![Measurement Conversion](videos/thumbnails/measurement-conversion.png)](https://www.youtube.com/watch?v=Vi2dWtnwJZ4)
 
 #### File Format
 
-[![File Format](https://img.youtube.com/vi/Gz7_tvN99w8/maxresdefault.jpg)](https://www.youtube.com/watch?v=Gz7_tvN99w8)
+[![File Format](videos/thumbnails/recipe-file.png)](https://www.youtube.com/watch?v=Gz7_tvN99w8)
 
 ### Server API
 
